@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import "../css/counter.css";
 
 type TCounter = {
@@ -25,3 +26,10 @@ const Counter: FC<TCounter> = ({ count, reset, decrement, increment }) => (
 );
 
 export default Counter;
+
+/*
+ * Modo 1
+  <button onClick={() => reset()}>Reset</button>
+  <button onClick={() => decrement()}>Decrement</button>
+  <button onClick={() => increment()}>Increment</button>
+*/
