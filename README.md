@@ -1,2 +1,3 @@
-# Counter-with-redux
+# Counter with redux
+
 Test Redux
