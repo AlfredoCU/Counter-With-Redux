@@ -2,7 +2,9 @@ import { FC } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
+import { TCount } from "./types";
 import Counter from "./components/Counter";
+import { selectCurrentCount } from "./store/selectors/counterSelectors";
 import { reset, decrement, increment } from "./store/actions/counterActions";
 
 type TApp = {
@@ -21,8 +23,8 @@ const App: FC<TApp> = ({ count, reset, decrement, increment }) => (
   />
 );
 
-const mapStateToProps = (state: { counter: { count: number } }) => ({
-  count: state.counter.count,
+const mapStateToProps = (state: TCount) => ({
+  count: selectCurrentCount(state),
 });
 
 const mapDispatchToProps = (dispatch: any) =>
