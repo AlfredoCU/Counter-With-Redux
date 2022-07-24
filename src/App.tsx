@@ -42,11 +42,10 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 //   reset: () => dispatch(reset()),
 //   decrement: () => dispatch(decrement()),
 //   increment: () => dispatch(increment()),
-//   dispatch,
 // });
 
 /*
  * Modo 1
- * Se puede enviar un objeto de acciones, pero cambiara la forma de ejecutar la función en el componente Counter
+ * Se puede enviar un objeto de acciones, pero cambiara la forma de ejecutar las funciones en el componente Counter
  */
 // export default connect(mapStateToProps, { reset, decrement, increment })(App);
