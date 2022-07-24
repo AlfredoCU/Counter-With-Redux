@@ -1,0 +1,20 @@
+h2 {
+    font-size: 3.2em;
+    font-weight: 300;
+}
+
+.span-title {
+    font-weight: 300;
+}
+
+.content {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .content { 
+        flex-direction: column-reverse;
+    }
+}
